@@ -1,0 +1,7 @@
+runtime: python37
+
+env_variables:
+  CLOUD_SQL_USERNAME: Gaurav
+  CLOUD_SQL_PASSWORD: test
+  CLOUD_SQL_DATABASE_NAME: test1
+  CLOUD_SQL_CONN_NAME: nimble-button-334712:asia-south2:testdb

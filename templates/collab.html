@@ -1,0 +1,36 @@
+<%- include("header") -%>
+<main>
+     <section class="mainContainer">
+     <div class='title'>
+          <h2>Active Collabs</h2>
+          <div class='underline'></div>
+     </div>
+     <% for(collab of collabs) {%>
+     <article class='review'>
+          <h4 class='author'><%=collab.adminName%></h4>
+          <p class='job'><%=collab.title%></p>
+          <p class='info'><%=collab.desc%></p>
+          <!-- <div class='button-container'>
+          <button class='prev-btn' onClick={prevPerson}>
+          Prev
+          </button>
+          <button class='next-btn' onClick={nextPerson}>
+          Next
+          </button>
+          </div> -->
+          <form action="/collab/request/:<%=collab.adminID%>" method="POST">
+          <button type="submit" class='random-btn'>
+          Join me
+          </button>
+          </form>
+     </article>
+     <%}%>
+     </section>
+</main>
+
+<main>
+     <section className='container'>
+          
+          <Invites />
+     </section>
+     </main>

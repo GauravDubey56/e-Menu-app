@@ -1,0 +1,27 @@
+<%- include("header") -%>
+
+    <section class="sec1">
+      <h2>Add Restaurant</h2>
+
+      <form class="queueForm" action="/restaurant/new" method="POST">
+        <div class="form-group">
+          <label for="title">Name</label>
+          <input type="text" class="form-control" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="desc">Cuisine</label>
+          <input type="text" class="form-control" name="catg" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="link">Project link (github, beehance, etc.)</label>
+          <input type="url" class="form-control" name="link" required>
+        </div>
+        <button type="submit" class="subBtn">Create</button>
+      </form>
+    </section>
+
+    <!--Local Scripts-->
+    <script type="text/javascript" src="/scripts/index.js"></script>
+  </body>
+</html>
